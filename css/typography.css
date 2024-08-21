@@ -69,13 +69,14 @@
   --text-preset-5-letter-spacing: 0rem;
   
   /* Spacing */
-  --spacing-1600: 128px;
-  --spacing-600: 48px;
-  --spacing-500: 40px;
-  --spacing-300: 24px;
-  --spacing-200: 16px;
-  --spacing-150: 12px;
-  --spacing-100: 8px;
+  --spacing-1600: 12.8rem;
+  --spacing-600: 4.8rem;
+  --spacing-500: 4rem;
+  --spacing-400: 3.2rem;
+  --spacing-300: 2.4rem;
+  --spacing-200: 1.6rem;
+  --spacing-150: 1.2rem;
+  --spacing-100: 0.8rem;
 }
 
 .header-title {
