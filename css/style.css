@@ -39,57 +39,7 @@ body {
     font-family: 'Young Serif', 'Outfit', sans-serif;
 }
 
-:root {
-    /* Colors */
-  --rose-800: #7A284E;
-  --rose-50: #FFF7FB;
-  --stone-900: #312E2C;
-  --stone-600: #5F564D;
-  --stone-150: #E3DDD7;
-  --stone-100: #F3E5D7;
-  --brown-800: #854632;
-  --white: #FFFFFF;
-  --black: #111;
 
-  /* Text Preset 1 */
-  --text-preset-1-size: 4rem; 
-  --text-preset-1-line-height: 1;
-  --text-preset-1-font-weight: 400;
-  --text-preset-1-letter-spacing: 0rem;
-
-  /* Text Preset 2 */
-  --text-preset-2-size: 2.8rem;
-  --text-preset-2-line-height: 1;
-  --text-preset-2-font-weight: 400;
-  --text-preset-2-letter-spacing: 0rem;
-
-  /* Text Preset 3 */
-  --text-preset-3-size: 2rem;
-  --text-preset-3-line-height: 1;
-  --text-preset-3-font-weight: 600;
-  --text-preset-3-letter-spacing: 0rem;
-
-  /* Text Preset 4 */
-  --text-preset-4-size: 1.6rem;
-  --text-preset-4-line-height: 1.5;
-  --text-preset-4-font-weight: 400;
-  --text-preset-4-letter-spacing: 0rem;
-
-  /* Text Preset 5 */
-  --text-preset-5-size: 1.6rem;
-  --text-preset-5-line-height: 1.5;
-  --text-preset-5-font-weight: 700;
-  --text-preset-5-letter-spacing: 0rem;
-  
-  /* Spacing */
-  --spacing-1600: 128px;
-  --spacing-600: 48px;
-  --spacing-500: 40px;
-  --spacing-300: 24px;
-  --spacing-200: 16px;
-  --spacing-150: 12px;
-  --spacing-100: 8px;
-}
 
 .container {
     display: flex;
@@ -123,35 +73,19 @@ img {
     background: url(../assets/images/image-omelette.jpeg);
 }
 
-header {
+.header {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: var(--spacing-300);
     align-self: stretch;
 }
-h1 {
+
+.header-title {
     margin: 0;
-    color: var(--stone-900);
-    font-family: "Young Serif";
-    font-size: var(--text-preset-1-size);
-    font-style: normal;
-    font-weight: var(--text-preset-1-font-weight);
-    line-height: var(--text-preset-1-line-height);
-    letter-spacing: var(--text-preset-1-letter-spacing);
 }
 
-header>p {
-    color: var(--color-stone-600);
-    font-family: Outfit;
-    font-size: var(--text-preset-4-size);
-    font-style: normal;
-    font-weight: var(--text-preset-4-font-weight);
-    line-height: var(--text-preset-4-line-height);
-    letter-spacing: var(--text-preset-4-letter-spacing);
-}
-
-section {
+.preparation {
     display: flex;
     padding: var(--spacing-300);
     flex-direction: column;
@@ -162,17 +96,7 @@ section {
     background: var(--rose-50);
 }
 
-section>h2 {
-    color: var(--stone-600);
-    font-family: Outfit;
-    font-size: var(--text-preset-3-size);
-    font-style: normal;
-    font-weight: var(--text-preset-3-font-weight);
-    line-height: var(--text-preset-3-line-height);
-    letter-spacing: var(--text-preset-3-letter-spacing);
-}
-
-section>ul {
+.preparation-list {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -181,17 +105,7 @@ section>ul {
     padding-left: 2rem;
 }
 
-section>ul>li {
-    color: var(--stone-600);
-    font-family: Outfit;
-    font-size: var(--font-size-desktop-text-preset-4, 16px);
-    font-style: normal;
-    font-weight: 400;
-    line-height: 150%;
-    padding-left: var(--spacing-200);
-}
-
-article {
+.ingredients, .instruction {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -199,17 +113,7 @@ article {
     align-self: stretch;
 }
 
-h3 {
-    color: var(--brown-800);
-    font-family: "Young Serif";
-    font-size: var(--text-preset-2-size);
-    font-style: normal;
-    font-weight: var(--text-preset-2-font-weight);
-    line-height: var(--text-preset-2-line-height);
-    letter-spacing: var(--text-preset-2-letter-spacing);
-}
-
-article>ul {
+.ingredients-list, .instruction-list {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -217,54 +121,16 @@ article>ul {
     align-self: stretch;
     padding-left: 2rem;
 }
-article>ul>li {
-    color: var(--stone-600);
-    font-family: Outfit;
-    font-size: var(--text-preset-4-size);
-    font-style: normal;
-    font-weight: var(--text-preset-4-font-weight);
-    line-height: var(--text-preset-4-line-height);
-    letter-spacing: var(--text-preset-4-letter-spacing);
-}
 
-article>ol {
+.nutrition {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: var(--spacing-100);
+    gap: var(--spacing-100, 8px);
     align-self: stretch;
-    padding-left: 2rem;
-}
-article>ol>li {
-    color: var(--stone-600);
-    font-family: Outfit;
-    font-size: var(--text-preset-4-size);
-    font-style: normal;
-    font-weight: var(--text-preset-4-font-weight);
-    line-height: var(--text-preset-4-line-height);
-    letter-spacing: var(--text-preset-4-letter-spacing);
-}
-
-footer {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: var(--spacing-300);
-    align-self: stretch;
-}
-
-footer>p {
-    color: var(--stone-600);
-    font-family: Outfit;
-    font-size: var(--text-preset-4-size);
-    font-style: normal;
-    font-weight: var(--text-preset-4-font-weight);
-    line-height: var(--text-preset-4-line-height);
-    letter-spacing: var(--text-preset-4-letter-spacing);
 }
 
 table {
-
     gap: 12px;
     align-self: stretch;
     width: 100%;
@@ -275,34 +141,14 @@ tr {
     border-bottom: 1px solid #E3DDD7; 
 }
 
-tr:last-child {
-    border-bottom: none;
-}
-
 th, td {
     padding: 10px;
     text-align: left;
     align-self: stretch;
 }
 
-th {
-    color: var(--stone-600);
-    font-family: Outfit;
-    font-size: var(--text-preset-4-size);
-    font-style: normal;
-    font-weight: var(--text-preset-4-font-weight);
-    line-height: var(--text-preset-4-line-height);
-    letter-spacing: var(--text-preset-4-letter-spacing);
-}
-
-td {
-    color: var(--brown-800);
-    font-family: Outfit;
-    font-size: var(--text-preset-4-size);
-    font-style: normal;
-    font-weight: var(--text-preset-5-font-weight);
-    line-height: var(--text-preset-4-line-height);
-    letter-spacing: var(--text-preset-4-letter-spacing);
+tr:last-child {
+    border-bottom: none;
 }
 
 hr {
@@ -310,6 +156,7 @@ hr {
     opacity: 50%;
     width: 100%;
 }
+
 .attribution {
     position: fixed;
     left: 0;
