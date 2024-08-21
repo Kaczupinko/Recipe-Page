@@ -25,14 +25,18 @@
     font-weight: 400;
     font-style: normal;
 }
+html {
+    font-size: 62.5%;
+}
+
 * {
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
+
 body {
-    background-color: var(--grey-900);
-    font-family: 'Inter', sans-serif;
-    font-size: 10px;
+    font-family: 'Young Serif', 'Outfit', sans-serif;
 }
 
 :root {
@@ -46,7 +50,7 @@ body {
   --brown-800: #854632;
   --white: #FFFFFF;
   --black: #111;
-  
+
   /* Text Preset 1 */
   --text-preset-1-size: 4rem; 
   --text-preset-1-line-height: 1;
@@ -78,12 +82,244 @@ body {
   --text-preset-5-letter-spacing: 0rem;
   
   /* Spacing */
-  --Spacing-1600: 128px;
-  --Spacing-600: 48px;
-  --Spacing-500: 40px;
-  --Spacing-300: 24px;
-  --Spacing-200: 16px;
-  --Spacing-150: 12px;
-  --Spacing-100: 8px;
+  --spacing-1600: 128px;
+  --spacing-600: 48px;
+  --spacing-500: 40px;
+  --spacing-300: 24px;
+  --spacing-200: 16px;
+  --spacing-150: 12px;
+  --spacing-100: 8px;
 }
 
+.container {
+    display: flex;
+    width: 144rem;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    align-items: center;
+    padding: var(--spacing-1600,--spacing-600);
+    gap: var(--spacing-100);
+    background-color: var(--stone-100);
+}
+
+.card {
+    display: flex;
+    width: 73.6rem;
+    flex-direction: column;
+    padding: var(--spacing-500);
+    align-items: flex-start;
+    gap: var(--spacing-500);
+    flex-shrink: 0;
+    justify-content: center;
+    border-radius: var(--spacing-300);
+    background: var(--white);
+}
+
+img {
+    height: 300px;
+    align-self: stretch;
+    border-radius: var(--spacing-150);
+    background: url(../assets/images/image-omelette.jpeg);
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacing-300);
+    align-self: stretch;
+}
+h1 {
+    margin: 0;
+    color: var(--stone-900);
+    font-family: "Young Serif";
+    font-size: var(--text-preset-1-size);
+    font-style: normal;
+    font-weight: var(--text-preset-1-font-weight);
+    line-height: var(--text-preset-1-line-height);
+    letter-spacing: var(--text-preset-1-letter-spacing);
+}
+
+header>p {
+    color: var(--color-stone-600);
+    font-family: Outfit;
+    font-size: var(--text-preset-4-size);
+    font-style: normal;
+    font-weight: var(--text-preset-4-font-weight);
+    line-height: var(--text-preset-4-line-height);
+    letter-spacing: var(--text-preset-4-letter-spacing);
+}
+
+section {
+    display: flex;
+    padding: var(--spacing-300);
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacing-200);
+    align-self: stretch;
+    border-radius: var(--spacing-150);
+    background: var(--rose-50);
+}
+
+section>h2 {
+    color: var(--stone-600);
+    font-family: Outfit;
+    font-size: var(--text-preset-3-size);
+    font-style: normal;
+    font-weight: var(--text-preset-3-font-weight);
+    line-height: var(--text-preset-3-line-height);
+    letter-spacing: var(--text-preset-3-letter-spacing);
+}
+
+section>ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacing-100);
+    align-self: stretch;
+    padding-left: 2rem;
+}
+
+section>ul>li {
+    color: var(--stone-600);
+    font-family: Outfit;
+    font-size: var(--font-size-desktop-text-preset-4, 16px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    padding-left: var(--spacing-200);
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacing-100, 8px);
+    align-self: stretch;
+}
+
+h3 {
+    color: var(--brown-800);
+    font-family: "Young Serif";
+    font-size: var(--text-preset-2-size);
+    font-style: normal;
+    font-weight: var(--text-preset-2-font-weight);
+    line-height: var(--text-preset-2-line-height);
+    letter-spacing: var(--text-preset-2-letter-spacing);
+}
+
+article>ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacing-100);
+    align-self: stretch;
+    padding-left: 2rem;
+}
+article>ul>li {
+    color: var(--stone-600);
+    font-family: Outfit;
+    font-size: var(--text-preset-4-size);
+    font-style: normal;
+    font-weight: var(--text-preset-4-font-weight);
+    line-height: var(--text-preset-4-line-height);
+    letter-spacing: var(--text-preset-4-letter-spacing);
+}
+
+article>ol {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacing-100);
+    align-self: stretch;
+    padding-left: 2rem;
+}
+article>ol>li {
+    color: var(--stone-600);
+    font-family: Outfit;
+    font-size: var(--text-preset-4-size);
+    font-style: normal;
+    font-weight: var(--text-preset-4-font-weight);
+    line-height: var(--text-preset-4-line-height);
+    letter-spacing: var(--text-preset-4-letter-spacing);
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacing-300);
+    align-self: stretch;
+}
+
+footer>p {
+    color: var(--stone-600);
+    font-family: Outfit;
+    font-size: var(--text-preset-4-size);
+    font-style: normal;
+    font-weight: var(--text-preset-4-font-weight);
+    line-height: var(--text-preset-4-line-height);
+    letter-spacing: var(--text-preset-4-letter-spacing);
+}
+
+table {
+
+    gap: 12px;
+    align-self: stretch;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+tr {
+    border-bottom: 1px solid #E3DDD7; 
+}
+
+tr:last-child {
+    border-bottom: none;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    align-self: stretch;
+}
+
+th {
+    color: var(--stone-600);
+    font-family: Outfit;
+    font-size: var(--text-preset-4-size);
+    font-style: normal;
+    font-weight: var(--text-preset-4-font-weight);
+    line-height: var(--text-preset-4-line-height);
+    letter-spacing: var(--text-preset-4-letter-spacing);
+}
+
+td {
+    color: var(--brown-800);
+    font-family: Outfit;
+    font-size: var(--text-preset-4-size);
+    font-style: normal;
+    font-weight: var(--text-preset-5-font-weight);
+    line-height: var(--text-preset-4-line-height);
+    letter-spacing: var(--text-preset-4-letter-spacing);
+}
+
+hr {
+    border-bottom: 1px solid #E3DDD7;
+    opacity: 50%;
+    width: 100%;
+}
+.attribution {
+    position: fixed;
+    left: 0;
+    bottom: 1rem;
+    width: 100%;
+    text-align: center;
+    font-size: 11px;
+    color: black;
+}
+
+.attribution>a {
+    font-size: 12px;
+}
